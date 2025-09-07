@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whinta VP - Personal Brand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="page-progress">
+        <div class="progress-fill"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="nav-center">Whinta</div>
+        
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="about">About</a></li>
+            <li><a href="#" class="nav-link" data-page="portfolio">Portfolio</a></li>
+            <li><a href="#" class="nav-link" data-page="blog">Blog</a></li>
+        </ul>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-item">
+            <a href="#" class="mobile-menu-link active" data-page="home">
+                <span>Home</span>
+                <span class="mobile-menu-icon">🏠</span>
+            </a>
+        </div>
+        <div class="mobile-menu-item">
+            <a href="#" class="mobile-menu-link" data-page="about">
+                <span>About Me</span>
+                <span class="mobile-menu-icon">👤</span>
+            </a>
+        </div>
+        <div class="mobile-menu-item">
+            <a href="#" class="mobile-menu-link" data-page="portfolio">
+                <span>My Projects</span>
+                <span class="mobile-menu-icon">💼</span>
+            </a>
+        </div>
+        <div class="mobile-menu-item">
+            <a href="#" class="mobile-menu-link" data-page="blog">
+                <span>Certificates</span>
+                <span class="mobile-menu-icon">🏆</span>
+            </a>
+        </div>
+        
+        <div class="mobile-social">
+            <div class="mobile-social-title">Follow Me</div>
+            <div class="mobile-social-links">
+                <a href="http://www.linkedin.com/in/whinta-virginia-putri" class="mobile-social-link" title="LinkedIn">💼</a>
+                <a href="https://github.com/whintaaa" class="mobile-social-link" title="GitHub">💻</a>
+                <a href="mailto:whintavirginia@gmail.com" class="mobile-social-link" title="Gmail">📧</a>
+                <a href="https://api.whatsapp.com/send?phone=6282230968314" class="mobile-social-link" title="WhatsApp">💬</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Social Media Icons (Desktop) -->
+    <div class="social-icons">
+        <a href="http://www.linkedin.com/in/whinta-virginia-putri" class="social-icon" title="LinkedIn">💼</a>
+        <a href="https://github.com/whintaaa" class="social-icon" title="GitHub">💻</a>
+        <a href="mailto:whintavirginia@gmail.com" class="social-icon" title="Gmail">📧</a>
+        <a href="https://api.whatsapp.com/send?phone=6282230968314" class="social-icon" title="WhatsApp">💬</a>
+    </div>
+
+    <!-- Swipe Indicator (Mobile) -->
+    <div class="swipe-indicator" id="swipeIndicator">
+        <div>Swipe left/right to navigate</div>
+        <div class="swipe-arrow">← →</div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="fab" id="fabBtn" title="Quick Actions">✨</button>
+
+    <!-- HOME PAGE -->
+    <div class="page active" id="home">
+        <div class="swipe-area" id="homeSwipe"></div>
+        <div class="home-content">
+            <div class="profile-section">
+                <div class="profile-container">
+                    <div class="profile-circle">
+                        <div class="profile-image" id="profileImage">
+                            <div class="character">
+                                <img class="character-face" src="/foto/avatar.jpg" alt="Profile Photo" style="width:250px; height:250px; border-radius:50%; object-fit:cover; box-shadow:0 4px 20px rgba(255,107,157,0.2); border:4px solid #fff;">
+                                <div class="hair-bow">🎀</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="touch-indicator" style="top: 20px; right: 20px;">👆</div>
+                </div>
+            </div>
+
+            <div class="text-section">
+                <h1 class="main-title">Whinta<br>Virginia Putri</h1>
+                <p class="subtitle">Data & Web Enthusiast || UI/UX & Graphic Designer</p>
+                <p class="description">
+                    Informatics Engineering fresh graduate passionate about <b>data, web development, and UI/UX design</b>. 
+                    Blending technical skills and creativity to craft <b>innovative digital solutions</b>.
+                </p>
+                <div class="home-buttons">
+                    <a href="#" class="btn btn-primary" data-page="portfolio" id="viewPortfolioBtn">View Portfolio</a>
+                    <a href="Resume.pdf" class="btn btn-secondary" download="Resume.pdf" id="downloadResumeBtn">
+                        <span class="btn-icon">📄</span>
+                        Download Resume
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div class="page" id="about">
+    <div class="swipe-area" id="aboutSwipe"></div>
+    <div class="about-container">
+        <h1 class="about-title">About Me</h1>
+        <div class="about-text">
+            <p>Hello! I'm Whinta Virginia Putri, a fresh graduate in Informatics Engineering who is passionate about 
+            <b>data analysis, web development, and design</b>. I enjoy combining technical skills and creativity 
+            to create <b>innovative, functional, and user-friendly digital solutions</b>.</p>
+            
+            <p>Throughout my journey, I have built various projects such as <b>machine learning prediction apps, 
+            web applications with PHP & Laravel, and UI/UX prototypes with Figma</b>. 
+            I also actively contribute as a <b>graphic designer</b> and <b>event organizer</b> in tech communities.</p>
+            
+            <p>When I’m not coding or designing, I love exploring new tech tools, keeping up with design trends, 
+            and collaborating in communities that foster innovation and creativity.</p>
+            
+            <p>My approach is <b>detail-oriented, collaborative, and adaptive</b>. 
+            Whether it’s <b>data projects, web development, or creative design</b>, 
+            I strive to deliver impactful results that inspire and connect people.</p>
+        </div>
+        
+        <div class="skills-container" id="skillsContainer">
+            <div class="skill-card" data-skill="data">
+                <div class="skill-icon">📊</div>
+                <div class="skill-title">Data & Machine Learning</div>
+                <div class="skill-desc">Building prediction models and analyzing datasets to uncover insights</div>
+            </div>
+            <div class="skill-card" data-skill="web">
+                <div class="skill-icon">💻</div>
+                <div class="skill-title">Web Development</div>
+                <div class="skill-desc">Developing applications with PHP, Laravel, Streamlit, and Flask</div>
+            </div>
+            <div class="skill-card" data-skill="uiux">
+                <div class="skill-icon">🎨</div>
+                <div class="skill-title">UI/UX Design</div>
+                <div class="skill-desc">Designing user-friendly interfaces and prototypes using Figma</div>
+            </div>
+            <div class="skill-card" data-skill="graphic">
+                <div class="skill-icon">✨</div>
+                <div class="skill-title">Graphic Design</div>
+                <div class="skill-desc">Creating creative visuals and digital content for branding & social media</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- PORTFOLIO PAGE -->
+    <div class="page" id="portfolio">
+        <div class="swipe-area" id="portfolioSwipe"></div>
+        <div class="portfolio-container">
+            <h1 class="portfolio-title">My Projects</h1>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div class="portfolio-item" data-project="portfolio2" onclick="openProject('LINK_PROJECTMU')">
+                    <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                        <img src="/foto/projectporto2.png" alt="Portfolio Website v2" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Portfolio Website v2</h3>
+                        <p>An upgraded version of my personal portfolio built with <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. 
+                        This version is more <b>interactive</b>, featuring smooth animations, dynamic content display, 
+                        and an improved user experience to better showcase projects and skills.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-project="xray" onclick="openProject('https://aplikasi-deteksi-chest-x-ray-paru-paru.onrender.com')">
+                    <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                        <img src="/foto/projectxray2.png" alt="X-Ray Lung Disease Prediction" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>X-Ray Lung Disease Prediction (2025)</h3>
+                        <p>A deep learning project to classify lung diseases (Tuberculosis and Pneumonia) from chest X-ray images. 
+                        This system was developed using <b>EfficientNet (B0, V2-B0, V2-S, V2-M)</b> with an optional 
+                        <b>GLCM feature extraction</b> approach. The project highlights model comparison and the 
+                        application of <b>AI in medical imaging</b> for faster and more accurate diagnosis.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Deep Learning</span>
+                            <span class="portfolio-tag">Flask</span>
+                            <span class="portfolio-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-project="xray" onclick="openProject('https://aplikasi-deteksi-penyakit-chest-x-ray.onrender.com')">
+                    <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                        <img src="/foto/projectxray1.png" alt="X-Ray Lung Disease Classification" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>X-Ray Lung Disease Classification (2025)</h3>
+                        <p>A deep learning project for classifying lung diseases (Tuberculosis and Pneumonia) using 
+                        <b>CNN EfficientNetV2-B0</b>. The system was tested with two approaches: <b>GLCM feature extraction</b> 
+                        and <b>direct image classification</b>. This project demonstrates the application of 
+                        <b>computer vision in medical imaging</b> for early disease detection.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Deep Learning</span>
+                            <span class="portfolio-tag">Flask</span>
+                            <span class="portfolio-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-project="resto" onclick="openProject('https://whintaaa.github.io/lemoon_vegetarian_cuisine.github.io/menu.html')">
+                    <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                        <img src="/foto/projectresto.png" alt="Restaurant Website" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Lemoon Vegetarian Cuisine Website (2024)</h3>
+                        <p>A modern restaurant website built with <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. 
+                        The site allows users to browse the restaurant’s menu and provides quick access to the restaurant’s 
+                        e-commerce platform and WhatsApp for easy orders and reservations.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-project="presensi" onclick="openProject('https://github.com/whintaaa/presensigps')">
+                    <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                        <img src="/foto/projectpresensi.jpg" alt="Internship Attendance App" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Internship Attendance System (2024)</h3>
+                        <p>A web-based application developed for PT Sanggar Sarana Baja to manage internship attendance and activity records. 
+                        Built with <b>Laravel</b> and <b>MySQL</b>, the system allows supervisors to monitor interns’ daily attendance, 
+                        track reports, and generate summaries for evaluation.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Laravel</span>
+                            <span class="portfolio-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-project="portfolio1" onclick="openProject('https://whintaaa.github.io/whintaaa.github.io-portofolio/')">
+                    <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                        <img src="/foto/projectporto1.png" alt="Portfolio Website v1" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Portfolio Website v1 (2023)</h3>
+                        <p>A personal portfolio website built using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. 
+                        This version features a simple layout with project showcases, about me section, and contact links, 
+                        designed to highlight creative and technical skills.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-project="music" onclick="openProject('https://github.com/whintaaa/music-player')">
+                <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                    <img src="/foto/projectmusic.png" alt="Music Player App" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Music Player Web App(2023)</h3>
+                    <p>A web-based music player built with <b>Laravel</b> and <b>MySQL</b>. 
+                    The application allows users to <b>upload, manage, and play songs</b> with metadata 
+                    such as title, artist, cover, and duration. Designed with a responsive interface 
+                    for an engaging listening experience.</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Laravel</span>
+                        <span class="portfolio-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+                <div class="portfolio-item" data-project="bmi" onclick="openProject('https://aplikasibmi.streamlit.app/')">
+                <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                    <img src="/foto/projectbmi.png" alt="BMI Prediction App" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                </div>
+                <div class="portfolio-info">
+                    <h3>BMI Prediction App(2023)</h3>
+                    <p>A machine learning web app for predicting <b>Body Mass Index (BMI)</b> categories based on 
+                    height, weight, and gender. The app includes <b>data analysis, model performance evaluation, 
+                    and real-time prediction</b> features.</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Python</span>
+                        <span class="portfolio-tag">Streamlit</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-project="spp" onclick="openProject('https://github.com/whintaaa/spp_Man1Bangkalan')">
+                <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                    <img src="/foto/projectspp.png" alt="SPP Payment Application" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                </div>
+                <div class="portfolio-info">
+                    <h3>School Fee Payment System(2023)</h3>
+                    <p>A web-based application developed for MAN 1 Bangkalan to manage student tuition fee (SPP) payments. 
+                    Built with <b>PHP</b> and <b>MySQL</b>, the system supports both admin and student logins, enabling 
+                    easier monitoring, recording, and reporting of payment transactions.</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">PHP</span>
+                        <span class="portfolio-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="portfolio-item" data-project="heart" onclick="openProject('https://psd-prediksi-jantung.streamlit.app/')">
+                <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                    <img src="/foto/projectjantung.png" alt="Heart Failure Prediction" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Heart Failure Risk Prediction(2023)</h3>
+                    <p>A data science project using <b>PyCaret</b> to analyze the Heart Failure Clinical Records dataset. 
+                    The system applies <b>automated model selection, hyperparameter tuning, and evaluation</b> to identify the 
+                    best-performing machine learning model for predicting patient heart failure risk.</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Machine Learning</span>
+                        <span class="portfolio-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+
+                
+                <div class="portfolio-item" data-project="audio" onclick="openProject('https://psd-audio-emosi.streamlit.app/')">
+                <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                    <img src="/foto/projectaudio.png" alt="Audio Emotion Prediction" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Audio Emotion Prediction (2023)</h3>
+                    <p>A machine learning web app for analyzing and predicting emotions from audio data. 
+                    Features include <b>audio feature extraction, preprocessing, and emotion classification</b> 
+                    using Python and Streamlit.</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Python</span>
+                        <span class="portfolio-tag">Streamlit</span>
+                    </div>
+                </div>
+            </div>
+
+                
+                <div class="portfolio-item" data-project="designs" onclick="openProject('https://www.canva.com/design/DAGySyH6xKA/M2e4kbGkLtB-iHDoWKOHOQ/edit?utm_content=DAGySyH6xKA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton')">
+                <div class="portfolio-image" style="padding:0;overflow:hidden;">
+                    <img src="/foto/gpuiux.jpg" alt="Graphic & UI/UX Projects" style="width:100%;height:100%;object-fit:cover;border-radius:15px;">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Graphic & UI/UX Design Showcase</h3>
+                    <p>A collection of creative works including brand identity, logo design, UI/UX prototypes, 
+                    and digital content crafted to deliver impactful visuals and engaging user experiences.</p>
+                    <div class="portfolio-tags">
+                        <span class="portfolio-tag">Graphic Design</span>
+                        <span class="portfolio-tag">UI/UX</span>
+                        <span class="portfolio-tag">Branding</span>
+                        <span class="portfolio-tag">Figma</span>
+                        <span class="portfolio-tag">Canva</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOG PAGE -->
+    <div class="page" id="blog">
+    <div class="swipe-area" id="blogSwipe"></div>
+    <div class="blog-container">
+        <h1 class="blog-title">Certificates</h1>
+        <div class="certificate-grid" id="certificateGrid">
+            
+            <div class="certificate-item" onclick="openCertificate('https://www.credly.com/badges/e9303ca0-166a-443f-9088-23aa6fecd366/linked_in_profile')">
+                <div class="certificate-badge">
+                    <img src="/foto/knime.jpeg" alt="KNIME Certificate" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
+                <div class="certificate-info">
+                    <h3>Basic Proficiency in KNIME Analytics Platform</h3>
+                    <p>KNIME Certification</p>
+                    <div class="certificate-date">Sep 2025</div>
+                </div>
+            </div>
+
+            <div class="certificate-item" onclick="openCertificate('https://www.credly.com/badges/4dcca457-3d34-4a57-af72-63828b0b474e/linked_in_profile')">
+                <div class="certificate-badge">
+                    <img src="/foto/ibm.jpeg" alt="IBM Data Fundamentals" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
+                <div class="certificate-info">
+                    <h3>Data Fundamentals</h3>
+                    <p>IBM Professional Certificate</p>
+                    <div class="certificate-date">Sep 2025</div>
+                </div>
+            </div>
+
+            <div class="certificate-item" onclick="openCertificate('https://www.credly.com/badges/24f63d42-55b7-4c16-9e00-20bd16b8c992/linked_in_profile')">
+                <div class="certificate-badge">
+                    <img src="/foto/ibm.jpeg" alt="IBM Granite Certificate" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
+                <div class="certificate-info">
+                    <h3>Data Classification and Summarization Using IBM Granite</h3>
+                    <p>IBM Professional Certificate</p>
+                    <div class="certificate-date">Jul 2025</div>
+                </div>
+            </div>
+
+            <div class="certificate-item" onclick="openCertificate('https://www.linkedin.com/in/whinta-virginia-putri-4a8095248/details/certifications/1757259010222/single-media-viewer/?profileId=ACoAAD08fYABmjQWY31DKbqakvTyUmax6CJn8ns')">
+                <div class="certificate-badge">
+                    <img src="/foto/oracle.png" alt="Oracle Database Design" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
+                <div class="certificate-info">
+                    <h3>Database Design</h3>
+                    <p>Oracle Database Academy</p>
+                    <div class="certificate-date">Mar 2023</div>
+                </div>
+            </div>
+
+            <div class="certificate-item" onclick="openCertificate('https://www.linkedin.com/in/whinta-virginia-putri-4a8095248/details/certifications/1757258900759/single-media-viewer/?profileId=ACoAAD08fYABmjQWY31DKbqakvTyUmax6CJn8ns')">
+                <div class="certificate-badge">
+                    <img src="/foto/oracle.png" alt="Oracle Database Foundations" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
+                <div class="certificate-info">
+                    <h3>Database Foundations</h3>
+                    <p>Oracle Database Academy</p>
+                    <div class="certificate-date">Mar 2023</div>
+                </div>
+            </div>
+
+            <div class="certificate-item" onclick="openCertificate('https://www.credly.com/badges/5dbbbdae-56a2-4817-a424-af9185056468/linked_in_profile')">
+                <div class="certificate-badge">
+                    <img src="/foto/cisco.jpg" alt="Cisco Networking Essentials" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
+                <div class="certificate-info">
+                    <h3>Networking Essentials</h3>
+                    <p>Cisco Networking Academy</p>
+                    <div class="certificate-date">Jan 2023</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
